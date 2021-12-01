@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Jessica Castro - Blog`,
-    description: `A blog about front-end development, javascript and other code stuffs.`,
+    position: `Full-Stack Developer`,
+    description: `Membro da Space Squad da RocketSeat e do Experience Team da Globoplay. Escrevo sobre tecnologias, jogos e mais.`,
     author: `Jessica Castro`,
     siteUrl: `https://jessicacastro.dev/`,
   },

@@ -1,14 +1,19 @@
-import * as React from "react"
+import React from "react"
 
-const Profile = () => (
-  <div className="Profile-wrapper">
-    <h1>Jessica Castro</h1>
-    <h2>Desenvolvedora Full-Stack</h2>
+import { useSiteMetadata } from '../../hooks/use-site-metadata'
 
-    <p>
-      Membro da Space Squad da RocketSeat e do Experience Team da Globoplay. Escrevo sobre tecnologias, jogos e mais.
-    </p>
-  </div>
-)
+
+const Profile = () => {
+  const { author, position, description } = useSiteMetadata();
+
+  return (
+    <div className="Profile-wrapper">
+      <h1>{ author }</h1>
+      <h2>{ position }</h2>
+
+      <p> {description} </p>
+    </div>
+  )
+}
 
 export default Profile
