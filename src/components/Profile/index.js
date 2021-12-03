@@ -3,18 +3,20 @@ import React from "react"
 import { useSiteMetadata } from '../../hooks/use-site-metadata'
 import Avatar from "../Avatar";
 
+import * as Styled from './styled'
+
 
 const Profile = () => {
   const { author, position, description } = useSiteMetadata();
 
   return (
-    <div className="Profile-wrapper">
+    <Styled.ProfileWrapper>
       <Avatar />
-      <h1>{ author }</h1>
-      <h2>{ position }</h2>
+      <Styled.ProfileAuthor>{ author }</Styled.ProfileAuthor>
+      <Styled.ProfilePosition>{ position }</Styled.ProfilePosition>
 
-      <p> {description} </p>
-    </div>
+      <Styled.ProfileDescription> {description} </Styled.ProfileDescription>
+    </Styled.ProfileWrapper>
   )
 }
 
