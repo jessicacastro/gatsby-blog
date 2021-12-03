@@ -3,15 +3,15 @@ import { useAvatar } from '../../hooks/use-avatar'
 import { useSiteMetadata } from '../../hooks/use-site-metadata'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
+import * as Styled from './styled';
+
 const Avatar = () => {
 
   const avatarImage = useAvatar();
   const { author } = useSiteMetadata();
   const avatar = getImage(avatarImage);
 
-  return (
-    <GatsbyImage image={avatar} alt={author} className="rounded_image"/>
-  )
+  return <Styled.AvatarWrapper image={avatar} alt={author} />
 }
 
 export default Avatar
