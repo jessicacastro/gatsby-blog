@@ -2,16 +2,20 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import Profile from "../Profile"
 
+import GlobalStyles from '../../styles/global'
+import * as Styled from "./styled"
+
 const Layout = ({ children }) => {
   return (
-    <>
+    <Styled.LayoutWrapper>
+      <GlobalStyles />
       <aside>
         <Profile />
       </aside>
-      <main>
+      <Styled.LayoutMain>
         {children}
-      </main>
-    </>
+      </Styled.LayoutMain>
+    </Styled.LayoutWrapper>
   )
 }
 
