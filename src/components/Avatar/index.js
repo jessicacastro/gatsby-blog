@@ -1,7 +1,7 @@
 import React from "react"
 import { useAvatar } from '../../hooks/use-avatar'
 import { useSiteMetadata } from '../../hooks/use-site-metadata'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { getImage } from 'gatsby-plugin-image'
 
 import * as Styled from './styled';
 
