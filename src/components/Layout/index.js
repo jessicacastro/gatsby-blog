@@ -1,10 +1,10 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 
-
-import GlobalStyles from '../../styles/global'
-import * as Styled from "./styled"
 import Sidebar from "../Sidebar"
+
+import * as Styled from "./styled"
+import GlobalStyles from '../../styles/global'
 
 const Layout = ({ children }) => {
   return (

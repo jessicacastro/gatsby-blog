@@ -9,7 +9,7 @@ const MenuLinks = () => (
       {
         links.map((link, index) => (
           <Styled.MenuLinksItem key={index}>
-            <Styled.MenuLinksLink to={link.url}>
+            <Styled.MenuLinksLink to={link.url} activeClassName="active">
               {link.label}
             </Styled.MenuLinksLink>
           </Styled.MenuLinksItem>

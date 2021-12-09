@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'gatsby'
 
 const MenuLinksWrapper = styled.nav``;
 
@@ -14,7 +15,7 @@ const MenuLinksItem = styled.li`
     color: #1FA1F2;
   }
 `
-const MenuLinksLink = styled.a`
+const MenuLinksLink = styled(Link)`
   color: #8899A6;
   text-decoration: none;
   transition: color 0.5s;
