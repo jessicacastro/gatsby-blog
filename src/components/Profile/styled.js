@@ -13,7 +13,7 @@ const ProfileLink = styled(Link)`
   transition: color 0.5s;
 
   &:hover {
-    color: #1FA1F2;
+    color: #4760AA;
   }
 `;
 

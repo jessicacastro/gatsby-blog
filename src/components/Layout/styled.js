@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const LayoutWrapper = styled.section`
 display: flex;
-background: #16202C;
+background: #020408;
 `;
 
 const LayoutMain = styled.main`

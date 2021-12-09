@@ -12,7 +12,7 @@ const MenuLinksItem = styled.li`
   padding: 0.5rem 0;
 
   .active {
-    color: #1FA1F2;
+    color: #4760AA;
   }
 `
 const MenuLinksLink = styled(Link)`
@@ -22,7 +22,7 @@ const MenuLinksLink = styled(Link)`
   cursor: pointer;
 
   &:hover {
-    color: #1FA1F2;
+    color: #4760AA;
   }
 `
 
