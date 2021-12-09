@@ -1,8 +1,10 @@
-import React from "react"
-import Profile from "../Profile"
+import React from 'react'
+import Profile from '../Profile'
+import SocialLinks from '../SocialLinks'
+import MenuLinks from '../MenuLinks'
+
 
 import * as Styled from './styled'
-
 
 const Sidebar = () => {
 
@@ -10,6 +12,8 @@ const Sidebar = () => {
   return (
     <Styled.SidebarWrapper>
       <Profile />
+      <SocialLinks />
+      <MenuLinks />
     </Styled.SidebarWrapper>
   )
 }
